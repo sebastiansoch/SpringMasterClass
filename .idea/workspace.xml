@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a4dacc9-7bd1-4749-b525-385cbc966ae8" name="Changes" comment="Spring Master class application init&#10;&#10;First ver without Spring">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/IncrementalPaymentIdGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentIdGenerator.java" afterDir="false" />
+    <list default="true" id="0a4dacc9-7bd1-4749-b525-385cbc966ae8" name="Changes" comment="Payment Id generator- DI">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/LoggingPaymentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/FakePaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/FakePaymentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/UUIDPaymentIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/UUIDPaymentIdGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +43,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.training.shop.payments" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="pl.training.shop.payments" />
     </key>
@@ -85,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662712762774</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Payment Id generator- DI">
+      <created>1662714704535</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662714704535</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,6 +109,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Spring Master class application init&#10;&#10;First ver without Spring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Master class application init&#10;&#10;First ver without Spring" />
+    <MESSAGE value="Payment Id generator- DI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Payment Id generator- DI" />
   </component>
 </project>
