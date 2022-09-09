@@ -1,17 +1,19 @@
 package pl.training.shop.payments;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.java.Log;
 
 import java.time.Instant;
 
 @Log
+@RequiredArgsConstructor
 public class FakePaymentService {
     private static final String LOG_FORMAT = "A new payment of %s has been initiated";
-    private final UUIDPaymentIdGenerator uuidPaymentIdGenerator = new UUIDPaymentIdGenerator();
+    private final PaymentIdGenerator paymentIdGenerator;
 
     public Payment process(PaymentRequest paymentRequest) {
         var payment = Payment.builder()
-                .id(uuidPaymentIdGenerator.getNext())
+                .id(paymentIdGenerator.getNext())
                 .money(paymentRequest.getMoney())
                 .timestamp(Instant.now())
                 .status(PaymentStatus.STARTED)
