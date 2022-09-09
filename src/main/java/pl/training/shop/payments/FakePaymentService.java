@@ -2,10 +2,11 @@ package pl.training.shop.payments;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.java.Log;
+import org.springframework.stereotype.Component;
 
 import java.time.Instant;
 
-@Log
+@Component
 @RequiredArgsConstructor
 public class FakePaymentService implements PaymentService {
     private final PaymentIdGenerator paymentIdGenerator;
