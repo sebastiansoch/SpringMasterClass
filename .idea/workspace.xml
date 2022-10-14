@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a4dacc9-7bd1-4749-b525-385cbc966ae8" name="Changes" comment="Spring AOP - Log">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/training/shop/payments/FakePaymentServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/training/shop/payments/IncrementalPaymentIdGeneratorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/training/shop/payments/UUIDPaymentIdGeneratorTest.java" afterDir="false" />
+    <list default="true" id="0a4dacc9-7bd1-4749-b525-385cbc966ae8" name="Changes" comment="Unit Tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/HashMapPaymentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/training/shop/payments/HashMapPaymentRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/FakePaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/FakePaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/training/shop/payments/FakePaymentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/training/shop/payments/FakePaymentServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
@@ -61,7 +62,7 @@
       <recent name="pl.training.shop.payments" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FakePaymentServiceTest">
+  <component name="RunManager" selected="JUnit.HashMapPaymentRepositoryTest">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.training.shop.Application" />
       <module name="spring-masterclass" />
@@ -90,6 +91,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FakePaymentServiceTest.shouldSaveCreatedPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-masterclass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.training.shop.payments.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.training.shop.payments" />
+      <option name="MAIN_CLASS_NAME" value="pl.training.shop.payments.FakePaymentServiceTest" />
+      <option name="METHOD_NAME" value="shouldSaveCreatedPayment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashMapPaymentRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-masterclass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.training.shop.payments.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.training.shop.payments" />
+      <option name="MAIN_CLASS_NAME" value="pl.training.shop.payments.HashMapPaymentRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IncrementalPaymentIdGeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-masterclass" />
       <extension name="coverage">
@@ -105,27 +137,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UUIDPaymentIdGeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-masterclass" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.training.shop.payments.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.training.shop.payments" />
-      <option name="MAIN_CLASS_NAME" value="pl.training.shop.payments.UUIDPaymentIdGeneratorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HashMapPaymentRepositoryTest" />
+        <item itemvalue="JUnit.FakePaymentServiceTest.shouldSaveCreatedPayment" />
+        <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.FakePaymentServiceTest" />
         <item itemvalue="JUnit.IncrementalPaymentIdGeneratorTest" />
-        <item itemvalue="JUnit.UUIDPaymentIdGeneratorTest" />
-        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663002676130</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Unit Tests">
+      <created>1663308127598</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663308127598</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +218,7 @@
     <MESSAGE value="Logging -Proxy" />
     <MESSAGE value="Add Spring framework" />
     <MESSAGE value="Spring AOP - Log" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring AOP - Log" />
+    <MESSAGE value="Unit Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unit Tests" />
   </component>
 </project>
