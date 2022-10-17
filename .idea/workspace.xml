@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a4dacc9-7bd1-4749-b525-385cbc966ae8" name="Changes" comment="Unit Tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/HashMapPaymentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/training/shop/payments/HashMapPaymentRepositoryTest.java" afterDir="false" />
+    <list default="true" id="0a4dacc9-7bd1-4749-b525-385cbc966ae8" name="Changes" comment="Payment Repository&#10;Fake HashMap Repo">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/IdGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/FakePaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/FakePaymentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/training/shop/payments/FakePaymentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/training/shop/payments/FakePaymentServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/HashMapPaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/HashMapPaymentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/IncrementalPaymentIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/IncrementalPaymentIdGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentConsoleLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentConsoleLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/UUIDPaymentIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/UUIDPaymentIdGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,10 +21,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -62,7 +63,7 @@
       <recent name="pl.training.shop.payments" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HashMapPaymentRepositoryTest">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.training.shop.Application" />
       <module name="spring-masterclass" />
@@ -139,9 +140,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.HashMapPaymentRepositoryTest" />
         <item itemvalue="JUnit.FakePaymentServiceTest.shouldSaveCreatedPayment" />
-        <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.FakePaymentServiceTest" />
         <item itemvalue="JUnit.IncrementalPaymentIdGeneratorTest" />
       </list>
@@ -198,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663308127598</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Payment Repository&#10;Fake HashMap Repo">
+      <created>1665747531479</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665747531479</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,6 +227,7 @@
     <MESSAGE value="Add Spring framework" />
     <MESSAGE value="Spring AOP - Log" />
     <MESSAGE value="Unit Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unit Tests" />
+    <MESSAGE value="Payment Repository&#10;Fake HashMap Repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Payment Repository&#10;Fake HashMap Repo" />
   </component>
 </project>
