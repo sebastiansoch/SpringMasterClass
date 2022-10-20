@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 
 @Aspect
-@Service
 @Log
 public class PaymentConsoleLogger {
     private static final String LOG_FORMAT = "A new payment of %s has been initiated";
