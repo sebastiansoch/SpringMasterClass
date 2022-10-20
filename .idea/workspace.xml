@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a4dacc9-7bd1-4749-b525-385cbc966ae8" name="Changes" comment="Payment Repository&#10;Fake HashMap Repo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/IdGenerator.java" afterDir="false" />
+    <list default="true" id="0a4dacc9-7bd1-4749-b525-385cbc966ae8" name="Changes" comment="Annotation Configuration">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/beans.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/FakePaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/FakePaymentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/HashMapPaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/HashMapPaymentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/IncrementalPaymentIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/IncrementalPaymentIdGenerator.java" afterDir="false" />
@@ -206,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665747531479</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Annotation Configuration">
+      <created>1665986473111</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665986473111</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,6 +236,7 @@
     <MESSAGE value="Spring AOP - Log" />
     <MESSAGE value="Unit Tests" />
     <MESSAGE value="Payment Repository&#10;Fake HashMap Repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Payment Repository&#10;Fake HashMap Repo" />
+    <MESSAGE value="Annotation Configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Annotation Configuration" />
   </component>
 </project>
