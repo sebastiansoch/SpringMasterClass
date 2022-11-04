@@ -4,17 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a4dacc9-7bd1-4749-b525-385cbc966ae8" name="Changes" comment="Order, Product">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/ShopConfiguration.java" afterDir="false" />
+    <list default="true" id="0a4dacc9-7bd1-4749-b525-385cbc966ae8" name="Changes" comment="Order, Product - poprawki">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/common/ContextListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/common/LoggingBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentStatusChangeListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentsConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentsStatusChangeEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_pl_PL.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/ShopService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/orders/HashMapOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/orders/HashMapOrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/ShopConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/ShopConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/FakePaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/FakePaymentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/IncrementalPaymentIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/IncrementalPaymentIdGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentsConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/UUIDPaymentIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/UUIDPaymentIdGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/products/HashMapProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/products/HashMapProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/products/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/products/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentConsoleLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentConsoleLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/training/shop/payments/FakePaymentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/training/shop/payments/FakePaymentServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,21 +51,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Nauka/SpringKurs/spring-masterclass/src/main/resources",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pl.training.shop.orders" />
       <recent name="pl.training.shop.products" />
       <recent name="pl.training.shop.payments" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Nauka\SpringKurs\spring-masterclass\src\main\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -225,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667542815768</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Order, Product - poprawki">
+      <created>1667545334216</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667545334216</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,6 +261,7 @@
     <MESSAGE value="Unit Tests" />
     <MESSAGE value="Payment Repository&#10;Fake HashMap Repo" />
     <MESSAGE value="Order, Product" />
-    <option name="LAST_COMMIT_MESSAGE" value="Order, Product" />
+    <MESSAGE value="Order, Product - poprawki" />
+    <option name="LAST_COMMIT_MESSAGE" value="Order, Product - poprawki" />
   </component>
 </project>
