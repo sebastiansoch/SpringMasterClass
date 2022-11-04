@@ -1,5 +1,6 @@
 package pl.training.shop.orders;
 
+import lombok.Setter;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
@@ -9,11 +10,11 @@ import java.util.Optional;
 @Repository
 public class HashMapOrderRepository implements OrderRepository {
 
+    @Setter
     private Map<Long, Order> orders = new HashMap<>();
     private long index = 0;
 
     @Override
-
     public Order save(Order order) {
         order.setId(index);
         orders.put(index, order);

@@ -1,9 +1,9 @@
-package pl.training.shop.payments;
+package pl.training.shop;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @EnableAspectJAutoProxy
 @Configuration
-public class PaymentsConfiguration {
+public class ShopConfiguration {
 }

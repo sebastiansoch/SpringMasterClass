@@ -3,7 +3,7 @@ package pl.training.shop.payments;
 import lombok.Setter;
 import org.springframework.stereotype.Service;
 
-@IdGenerator("incremental")
+@IdGenerator("paymentIdGenerator")
 public class IncrementalPaymentIdGenerator implements PaymentIdGenerator {
     public static final String ID_FORMAT = "%010d";
     @Setter

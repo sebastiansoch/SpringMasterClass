@@ -20,7 +20,7 @@ public class ShopService {
     private final ProductService productService;
 
     public Product addProduct(Product product) {
-        return productService.save(product);
+        return productService.add(product);
     }
 
     public PagedResult<Product> getProducts(int pageNumber, int pageSize) {

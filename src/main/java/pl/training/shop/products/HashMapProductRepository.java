@@ -1,5 +1,6 @@
 package pl.training.shop.products;
 
+import lombok.Setter;
 import org.springframework.stereotype.Repository;
 import pl.training.shop.common.PagedResult;
 
@@ -10,6 +11,7 @@ import java.util.Map;
 @Repository
 public class HashMapProductRepository implements ProductRepository {
 
+    @Setter
     private Map<Long, Product> products = new HashMap<>();
     private long index = 0;
 

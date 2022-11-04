@@ -10,7 +10,7 @@ public class ProductService {
 
     private final ProductRepository productRepository;
 
-    public Product save(Product product) {
+    public Product add(Product product) {
         return productRepository.save(product);
     }
 
