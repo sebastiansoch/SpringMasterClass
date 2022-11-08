@@ -1,14 +1,12 @@
 package pl.training.shop.products;
 
 import lombok.Setter;
-import org.springframework.stereotype.Repository;
 import pl.training.shop.common.PagedResult;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-@Repository
 public class HashMapProductRepository implements ProductRepository {
 
     @Setter
@@ -17,7 +15,7 @@ public class HashMapProductRepository implements ProductRepository {
 
     @Override
     public Product save(Product product) {
-        product.setId(index);
+        product.setId(++index);
         products.put(index, product);
         return product;
     }
@@ -28,4 +26,5 @@ public class HashMapProductRepository implements ProductRepository {
         var data = new ArrayList<>(products.values());
         return new PagedResult<>(data, pageNumber, totalPages);
     }
+
 }

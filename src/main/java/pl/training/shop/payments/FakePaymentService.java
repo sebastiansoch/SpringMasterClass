@@ -2,27 +2,15 @@ package pl.training.shop.payments;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.java.Log;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.config.BeanDefinition;
-import org.springframework.context.ApplicationEvent;
-import org.springframework.context.ApplicationEventPublisher;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 import java.time.Instant;
 
-
-@Service("paymentService")
 @Log
 @RequiredArgsConstructor
 public class FakePaymentService implements PaymentService {
 
     private final PaymentIdGenerator paymentIdGenerator;
     private final PaymentRepository paymentRepository;
-    private final ApplicationEventPublisher eventPublisher;
 
     @LogPayments
     @Override
@@ -33,19 +21,7 @@ public class FakePaymentService implements PaymentService {
                 .timestamp(Instant.now())
                 .status(PaymentStatus.STARTED)
                 .build();
-
-        eventPublisher.publishEvent(new PaymentsStatusChangeEvent(this, payment));
-
         return paymentRepository.save(payment);
     }
 
-    @PostConstruct
-    public void init() {
-        log.info("PaymentService initialization");
-    }
-
-    @PreDestroy
-    public void destroy() {
-        log.info("PaymentService is going down");
-    }
 }

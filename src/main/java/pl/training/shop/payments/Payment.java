@@ -9,6 +9,7 @@ import java.time.Instant;
 @Builder
 @Value
 public class Payment {
+
     String id;
     FastMoney money;
     Instant timestamp;

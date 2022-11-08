@@ -7,6 +7,7 @@ import javax.money.Monetary;
 import java.util.Locale;
 
 public class LocalMoney {
+
     public static FastMoney of(Number number) {
         return FastMoney.of(number, getCurrencyUnit());
     }
@@ -16,8 +17,8 @@ public class LocalMoney {
     }
 
     private static CurrencyUnit getCurrencyUnit() {
-        var local = new Locale("pl", "PL");
-        var currencyUnit = Monetary.getCurrency(local);
-        return currencyUnit;
+        var locale = Locale.getDefault();
+        return Monetary.getCurrency(locale);
     }
+
 }

@@ -1,12 +1,11 @@
 package pl.training.shop.payments;
 
-import org.springframework.context.ApplicationEventPublisher;
-import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class PaymentsConfiguration {
+
     @Bean
     public PaymentIdGenerator paymentIdGenerator() {
         return new IncrementalPaymentIdGenerator();
@@ -18,12 +17,13 @@ public class PaymentsConfiguration {
     }
 
     @Bean
-    public PaymentService fakePaymentService(PaymentIdGenerator paymentIdGenerator, PaymentRepository paymentRepository, ApplicationEventPublisher eventPublisher) {
-        return new FakePaymentService(paymentIdGenerator, paymentRepository, eventPublisher);
+    public PaymentService paymentService(PaymentIdGenerator paymentIdGenerator, PaymentRepository paymentRepository) {
+        return new FakePaymentService(paymentIdGenerator, paymentRepository);
     }
 
     @Bean
-    public PaymentConsoleLogger paymentConsoleLogger(MessageSource messageSource) {
-        return new PaymentConsoleLogger(messageSource);
+    public PaymentConsoleLogger paymentConsoleLogger() {
+        return new PaymentConsoleLogger();
     }
+
 }

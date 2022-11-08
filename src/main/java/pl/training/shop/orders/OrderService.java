@@ -1,9 +1,7 @@
 package pl.training.shop.orders;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
 
-@Service
 @RequiredArgsConstructor
 public class OrderService {
 
@@ -21,4 +19,5 @@ public class OrderService {
     public void update(Order order) {
         orderRepository.update(order);
     }
+
 }

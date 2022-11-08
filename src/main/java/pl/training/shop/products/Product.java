@@ -7,9 +7,11 @@ import org.javamoney.moneta.FastMoney;
 @Builder
 @Data
 public class Product {
+
     private Long id;
     private String name;
     private String description;
     private FastMoney price;
-    private ProductsType type;
+    private ProductType type;
+
 }

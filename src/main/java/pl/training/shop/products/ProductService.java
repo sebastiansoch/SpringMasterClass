@@ -1,10 +1,8 @@
 package pl.training.shop.products;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
 import pl.training.shop.common.PagedResult;
 
-@Service
 @RequiredArgsConstructor
 public class ProductService {
 
@@ -17,4 +15,5 @@ public class ProductService {
     public PagedResult<Product> getAll(int pageNumber, int pageSize) {
         return productRepository.findAll(pageNumber, pageSize);
     }
+
 }
