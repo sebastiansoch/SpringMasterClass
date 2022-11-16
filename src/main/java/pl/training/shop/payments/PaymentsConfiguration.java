@@ -1,5 +1,6 @@
 package pl.training.shop.payments;
 
+import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -22,8 +23,8 @@ public class PaymentsConfiguration {
     }
 
     @Bean
-    public PaymentConsoleLogger paymentConsoleLogger() {
-        return new PaymentConsoleLogger();
+    public PaymentConsoleLogger paymentConsoleLogger(MessageSource messageSource) {
+        return new PaymentConsoleLogger(messageSource);
     }
 
 }

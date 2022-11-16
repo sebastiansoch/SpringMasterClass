@@ -4,45 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a4dacc9-7bd1-4749-b525-385cbc966ae8" name="Changes" comment="Internationalization, PostProcessor, EventListener">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/orders/OrdersConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/products/ProductsConfiguration.java" afterDir="false" />
+    <list default="true" id="0a4dacc9-7bd1-4749-b525-385cbc966ae8" name="Changes" comment="Code From Course Site&#10;add ProductType">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_pl_PL.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/ShopConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/ShopConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/ShopService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/common/ContextListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/common/LoggingBeanPostProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/common/PagedResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/common/PagedResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/orders/HashMapOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/orders/HashMapOrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/orders/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/orders/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/orders/OrderNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/orders/OrderNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/orders/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/orders/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/orders/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/orders/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/FakePaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/FakePaymentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/HashMapPaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/HashMapPaymentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/IdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/IdGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/IncrementalPaymentIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/IncrementalPaymentIdGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/LocalMoney.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/LocalMoney.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/LogPayments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/LogPayments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/Payment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentConsoleLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentConsoleLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentIdGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentStatusChangeListener.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentsConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentsStatusChangeEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/UUIDPaymentIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/UUIDPaymentIdGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/products/HashMapProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/products/HashMapProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/products/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/products/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/products/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/products/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/products/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/products/ProductsType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages_pl_PL.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +57,7 @@
     "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
   <component name="RecentsManager">
