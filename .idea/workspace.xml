@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a4dacc9-7bd1-4749-b525-385cbc966ae8" name="Changes" comment="Code From Course Site&#10;add ProductType">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_pl_PL.properties" afterDir="false" />
+    <list default="true" id="0a4dacc9-7bd1-4749-b525-385cbc966ae8" name="Changes" comment="MessageSource -internationalization">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/common/LoggingBeanPostProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/ShopConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/ShopConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentConsoleLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentConsoleLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/training/shop/payments/PaymentsConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667573146922</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="MessageSource -internationalization">
+      <created>1668582316093</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668582316093</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,6 +270,7 @@
     <MESSAGE value="Order, Product" />
     <MESSAGE value="Order, Product - poprawki" />
     <MESSAGE value="Internationalization, PostProcessor, EventListener" />
-    <option name="LAST_COMMIT_MESSAGE" value="Internationalization, PostProcessor, EventListener" />
+    <MESSAGE value="MessageSource -internationalization" />
+    <option name="LAST_COMMIT_MESSAGE" value="MessageSource -internationalization" />
   </component>
 </project>
